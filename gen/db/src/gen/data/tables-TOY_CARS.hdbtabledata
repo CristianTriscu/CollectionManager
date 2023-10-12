@@ -1,0 +1,33 @@
+{
+  "format_version": 1,
+  "imports": [
+    {
+      "target_table": "TABLES_TOY_CARS",
+      "source_data": {
+        "data_type": "CSV",
+        "file_name": "tables-TOY_CARS.csv",
+        "has_header": true,
+        "type_config": {
+          "delimiter": ","
+        }
+      },
+      "import_settings": {
+        "import_columns": [
+          "ID",
+          "MAKE",
+          "MODEL",
+          "PRIMARY_COLOR",
+          "SECONDARY_COLOR"
+        ],
+        "include_filter": []
+      },
+      "column_mappings": {
+        "ID": "ID",
+        "MAKE": "MAKE",
+        "MODEL": "MODEL",
+        "PRIMARY_COLOR": "PRIMARY_COLOR",
+        "SECONDARY_COLOR": "SECONDARY_COLOR"
+      }
+    }
+  ]
+}
