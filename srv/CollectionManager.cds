@@ -1,4 +1,4 @@
-using {tables} from '../../db/tables';
+using {tables} from '../db/tables';
 
 service CollectionManger {
 

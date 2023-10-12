@@ -1,0 +1,32 @@
+{
+  "namespace": "tables",
+  "definitions": {
+    "tables.TOY_CARS": {
+      "kind": "entity",
+      "elements": {
+        "ID": {
+          "@odata.Type": "Edm.String",
+          "key": true,
+          "type": "cds.UUID"
+        },
+        "MAKE": {
+          "type": "cds.String"
+        },
+        "MODEL": {
+          "type": "cds.String"
+        },
+        "PRIMARY_COLOR": {
+          "type": "cds.String"
+        },
+        "SECONDARY_COLOR": {
+          "type": "cds.String"
+        }
+      }
+    }
+  },
+  "meta": {
+    "creator": "CDS Compiler v3.9.10",
+    "flavor": "inferred"
+  },
+  "$version": "2.0"
+}
