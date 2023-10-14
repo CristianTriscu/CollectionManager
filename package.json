@@ -28,7 +28,7 @@
         "undeploy": "cf undeploy CollectionManager --delete-services --delete-service-keys --delete-service-brokers",
         "build": "rimraf resources mta_archives && mbt build --mtar archive",
         "deploy": "cf deploy mta_archives/archive.mtar --retries 1",
-        "watch-lasttry": "cds watch --open lasttry/webapp/index.html?sap-ui-xx-viewCache=false"
+        "watch-cm": "cds watch --open cm/webapp/index.html?sap-ui-xx-viewCache=false"
     },
     "cds": {
         "hana": {
@@ -43,6 +43,6 @@
     "sapux": [
         "app/test-01",
         "app/project1",
-        "app/lasttry"
+        "app/cm"
     ]
 }

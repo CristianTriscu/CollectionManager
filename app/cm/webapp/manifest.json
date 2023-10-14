@@ -1,7 +1,7 @@
 {
     "_version": "1.58.0",
     "sap.app": {
-        "id": "cristian.lasttry",
+        "id": "cristian.cm",
         "type": "application",
         "i18n": "i18n/i18n.properties",
         "applicationVersion": {
@@ -28,8 +28,8 @@
         },
         "crossNavigation": {
             "inbounds": {
-                "lastTRY-display": {
-                    "semanticObject": "lastTRY",
+                "cm-display": {
+                    "semanticObject": "cm",
                     "action": "display",
                     "title": "{{flpTitle}}",
                     "subTitle": "{{flpSubtitle}}",
@@ -77,7 +77,7 @@
             "i18n": {
                 "type": "sap.ui.model.resource.ResourceModel",
                 "settings": {
-                    "bundleName": "cristian.lasttry.i18n.i18n"
+                    "bundleName": "cristian.cm.i18n.i18n"
                 }
             },
             "": {
@@ -115,11 +115,11 @@
                     ]
                 },
                 {
-                    "pattern": "ToyCars({key}):?query:",
-                    "name": "ToyCarsObjectPage",
+                    "name": "ToyCarsToyCar",
+                    "pattern": "ToyCars({ToyCarsKey}):?query:",
                     "target": [
                         "ToyCarsList",
-                        "ToyCarsObjectPage"
+                        "ToyCarsToyCar"
                     ]
                 }
             ],
@@ -135,27 +135,28 @@
                             "navigation": {
                                 "ToyCars": {
                                     "detail": {
-                                        "route": "ToyCarsObjectPage"
+                                        "route": "ToyCarsToyCar"
                                     }
                                 }
-                            }
+                            },
+                            "initialLoad": "Enabled"
                         }
                     },
                     "controlAggregation": "beginColumnPages",
                     "contextPattern": ""
                 },
-                "ToyCarsObjectPage": {
+                "ToyCarsToyCar": {
                     "type": "Component",
-                    "id": "ToyCarsObjectPage",
-                    "name": "sap.fe.templates.ObjectPage",
+                    "id": "ToyCarsToyCar",
+                    "name": "sap.fe.core.fpm",
+                    "controlAggregation": "midColumnPages",
                     "options": {
                         "settings": {
-                            "editableHeaderContent": false,
+                            "viewName": "cristian.cm.ext.view.ToyCar",
                             "contextPath": "/ToyCars"
                         }
                     },
-                    "controlAggregation": "midColumnPages",
-                    "contextPattern": "/ToyCars({key})"
+                    "contextPattern": "/ToyCars({ToyCarsKey})"
                 }
             }
         },
@@ -177,6 +178,6 @@
     },
     "sap.cloud": {
         "public": true,
-        "service": "lastTry"
+        "service": "cm"
     }
 }

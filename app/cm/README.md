@@ -8,8 +8,8 @@
 |**Template Used**<br>List Report Page V4|
 |**Service Type**<br>Local Cap|
 |**Service URL**<br>http://localhost:4004/collection-manger/
-|**Module Name**<br>lasttry|
-|**Application Title**<br>lasttry|
+|**Module Name**<br>cm|
+|**Application Title**<br>cm|
 |**Namespace**<br>cristian|
 |**UI5 Theme**<br>sap_horizon|
 |**UI5 Version**<br>1.119.1|
@@ -18,7 +18,7 @@
 |**Add Eslint configuration**<br>False|
 |**Main Entity**<br>ToyCars|
 
-## lasttry
+## cm
 
 A Fiori application.
 
@@ -26,7 +26,7 @@ A Fiori application.
 
 -   This app has been generated using the SAP Fiori tools - App Generator, as part of the SAP Fiori tools suite.  In order to launch the generated app, simply start your CAP project and navigate to the following location in your browser:
 
-http://localhost:4004/lasttry/webapp/index.html
+http://localhost:4004/cm/webapp/index.html
 
 #### Pre-requisites:
 

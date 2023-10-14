@@ -42,15 +42,15 @@ modules:
     content:
       instance:
         destinations:
-        - Name: lastTry_CollectionManager_html_repo_host
+        - Name: cm_CollectionManager_html_repo_host
           ServiceInstanceName: CollectionManager-html5-app-host-service
           ServiceKeyName: CollectionManager_html_repo_host-key
-          sap.cloud.service: lastTry
+          sap.cloud.service: cm
         - Authentication: OAuth2UserTokenExchange
-          Name: lastTry_uaa_CollectionManager
+          Name: cm_uaa_CollectionManager
           ServiceInstanceName: CollectionManager-xsuaa-service
           ServiceKeyName: uaa_CollectionManager-key
-          sap.cloud.service: lastTry
+          sap.cloud.service: cm
         existing_destinations_policy: ignore
   build-parameters:
     no-source: true
@@ -65,12 +65,12 @@ modules:
     build-result: resources
     requires:
     - artifacts:
-      - cristianlasttry.zip
-      name: cristianlasttry
+      - cristiancm.zip
+      name: cristiancm
       target-path: resources/
-- name: cristianlasttry
+- name: cristiancm
   type: html5
-  path: app/lasttry
+  path: app/cm
   build-parameters:
     build-result: dist
     builder: custom

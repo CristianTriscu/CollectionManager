@@ -1,4 +1,4 @@
-sap.ui.define(['sap/fe/test/ListReport'], function(ListReport) {
+sap.ui.define(['sap/fe/test/ListReport'], function (ListReport) {
     'use strict';
 
     var CustomPageDefinitions = {
@@ -8,7 +8,7 @@ sap.ui.define(['sap/fe/test/ListReport'], function(ListReport) {
 
     return new ListReport(
         {
-            appId: 'cristian.lasttry',
+            appId: 'cristian.cm',
             componentId: 'ToyCarsList',
             contextPath: '/ToyCars'
         },
