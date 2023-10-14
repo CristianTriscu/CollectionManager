@@ -30,6 +30,7 @@
             <Record Type="UI.DataField">
               <PropertyValue Property="Label" String="ID"/>
               <PropertyValue Property="Value" Path="ID"/>
+              <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
             </Record>
             <Record Type="UI.DataField">
               <PropertyValue Property="Label" String="MAKE"/>
@@ -38,14 +39,17 @@
             <Record Type="UI.DataField">
               <PropertyValue Property="Label" String="MODEL"/>
               <PropertyValue Property="Value" Path="MODEL"/>
+              <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
             </Record>
             <Record Type="UI.DataField">
               <PropertyValue Property="Label" String="PRIMARY_COLOR"/>
               <PropertyValue Property="Value" Path="PRIMARY_COLOR"/>
+              <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
             </Record>
             <Record Type="UI.DataField">
               <PropertyValue Property="Label" String="SECONDARY_COLOR"/>
               <PropertyValue Property="Value" Path="SECONDARY_COLOR"/>
+              <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
             </Record>
           </Collection>
         </Annotation>
@@ -86,6 +90,36 @@
             </Record>
           </Collection>
         </Annotation>
+        <Annotation Term="UI.SelectionFields">
+          <Collection>
+            <PropertyPath>ID</PropertyPath>
+            <PropertyPath>MAKE</PropertyPath>
+            <PropertyPath>MODEL</PropertyPath>
+            <PropertyPath>PRIMARY_COLOR</PropertyPath>
+            <PropertyPath>SECONDARY_COLOR</PropertyPath>
+          </Collection>
+        </Annotation>
+        <Annotation Term="UI.HeaderInfo">
+          <Record Type="UI.HeaderInfoType">
+            <PropertyValue Property="TypeName" String="Salut"/>
+            <PropertyValue Property="TypeNamePlural" String=""/>
+          </Record>
+        </Annotation>
+      </Annotations>
+      <Annotations Target="CollectionManger.ToyCars/ID">
+        <Annotation Term="Common.Label" String="ID"/>
+      </Annotations>
+      <Annotations Target="CollectionManger.ToyCars/MAKE">
+        <Annotation Term="Common.Label" String="MAKE"/>
+      </Annotations>
+      <Annotations Target="CollectionManger.ToyCars/MODEL">
+        <Annotation Term="Common.Label" String="MODEL"/>
+      </Annotations>
+      <Annotations Target="CollectionManger.ToyCars/PRIMARY_COLOR">
+        <Annotation Term="Common.Label" String="PRIMARY_COLOR"/>
+      </Annotations>
+      <Annotations Target="CollectionManger.ToyCars/SECONDARY_COLOR">
+        <Annotation Term="Common.Label" String="SECONDARY_COLOR"/>
       </Annotations>
     </Schema>
   </edmx:DataServices>

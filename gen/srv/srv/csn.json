@@ -35,6 +35,9 @@
           "Label": "ID",
           "Value": {
             "=": "ID"
+          },
+          "@UI.Importance": {
+            "#": "High"
           }
         },
         {
@@ -49,6 +52,9 @@
           "Label": "MODEL",
           "Value": {
             "=": "MODEL"
+          },
+          "@UI.Importance": {
+            "#": "High"
           }
         },
         {
@@ -56,6 +62,9 @@
           "Label": "PRIMARY_COLOR",
           "Value": {
             "=": "PRIMARY_COLOR"
+          },
+          "@UI.Importance": {
+            "#": "High"
           }
         },
         {
@@ -63,6 +72,9 @@
           "Label": "SECONDARY_COLOR",
           "Value": {
             "=": "SECONDARY_COLOR"
+          },
+          "@UI.Importance": {
+            "#": "High"
           }
         }
       ],
@@ -112,6 +124,25 @@
           "Target": "@UI.FieldGroup#GeneratedGroup1"
         }
       ],
+      "@UI.SelectionFields": [
+        {
+          "=": "ID"
+        },
+        {
+          "=": "MAKE"
+        },
+        {
+          "=": "MODEL"
+        },
+        {
+          "=": "PRIMARY_COLOR"
+        },
+        {
+          "=": "SECONDARY_COLOR"
+        }
+      ],
+      "@UI.HeaderInfo.TypeName": "Salut",
+      "@UI.HeaderInfo.TypeNamePlural": "",
       "projection": {
         "from": {
           "ref": [
@@ -121,20 +152,25 @@
       },
       "elements": {
         "ID": {
+          "@Common.Label": "ID",
           "@odata.Type": "Edm.String",
           "key": true,
           "type": "cds.UUID"
         },
         "MAKE": {
+          "@Common.Label": "MAKE",
           "type": "cds.String"
         },
         "MODEL": {
+          "@Common.Label": "MODEL",
           "type": "cds.String"
         },
         "PRIMARY_COLOR": {
+          "@Common.Label": "PRIMARY_COLOR",
           "type": "cds.String"
         },
         "SECONDARY_COLOR": {
+          "@Common.Label": "SECONDARY_COLOR",
           "type": "cds.String"
         }
       }

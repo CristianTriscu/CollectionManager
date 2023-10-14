@@ -1,1 +1,0 @@
-using CollectionManger as service from '../../srv/CollectionManager';
